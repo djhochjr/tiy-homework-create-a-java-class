@@ -3,26 +3,37 @@
  */
 public class Main {
     public static void main(String[] args) {
-        Skis skis = new Skis();
+        boolean powderDay=true;
 
-        skis.brand = "Rossingnol";
-        skis.model = "Experience 108";
-        skis.color = "black";
-        skis.length = "182cm";
-        skis.width = "108mm";
 
-        Skis skis2 = new Skis();
+        Skis skis = new Skis("Rossignol", "Exreience 08", "Black","182", "108" );
+        Skis skis2 = new Skis("Icelantic", "Shakra", "Powder Pink", "188", "112");
 
-        skis2.brand = "Icelantic";
-        skis2.model = "Shakra Mons";
-        skis2.color = "powder pink";
-        skis2.length = "188cm";
-        skis2.width = "112mm";
+        if (powderDay){
+            System.out.println("It's snowing ");
+            System.out.println("I'll use my " + skis2.brand +" " +skis2.model +"'s");
 
-        String description =  skis.toString();
-        String description =  skis2.toString();
 
-        System.out.println(description);
+        }
+        else{
+            System.out.println("It's sunny ");
+            System.out.println("I'll use my " + skis.brand + " " + skis.length);
+
+        }
+            System.out.println( skis2);
+            System.out.println( skis);
+
+
+
+
+
+
+
+
+
+
+
+
 
 
     }
