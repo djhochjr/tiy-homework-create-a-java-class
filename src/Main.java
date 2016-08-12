@@ -1,43 +1,27 @@
 /**
- * Created by davehochstrasser on 8/4/16.
+ * Created by davehochstrasser on 8/12/16.
  */
 public class Main {
     public static void main(String[] args) {
-        boolean powderDay=true;
+      /* Object creation */
+        Puppy myPuppy = new Puppy(2, "brown ", 45, 18, "Bob", true);
+        Puppy myOtherPuppy = new Puppy(3, "spotted ", 36, 13, "Tranny ", false);
 
+      /* Call class method to set puppy's age */
+       /* myPuppy.setAge(1);
 
-        Skis skis = new Skis("Rossignol", "Exreience 08", "Black","182", "108" );
-        Skis skis2 = new Skis("Icelantic", "Shakra", "Powder Pink", "188", "112");
+      /* Call another class method to get puppy's age */
 
-        if (powderDay){
-            System.out.println("It's snowing ");
-            System.out.println("I'll use my " + skis2.brand +" " +skis2.model +"'s");
+       /*myPuppy.getAge(2);
 
+      /* You can access instance variable as follows as well */
+        //System.out.println("Variable Value :" + myPuppy.puppyAge);
+        if (myPuppy.isCute == true) {
+            System.out.println(myPuppy);
+        }
+        if (myOtherPuppy.isCute == true) {
+            System.out.println(myOtherPuppy);
 
         }
-        else{
-            System.out.println("It's sunny ");
-            System.out.println("I'll use my " + skis.brand + " " + skis.length);
-
-        }
-            System.out.println( skis2);
-            System.out.println( skis);
-
-
-
-
-
-
-
-
-
-
-
-
-
-
     }
-
 }
-
-
